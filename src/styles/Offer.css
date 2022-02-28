@@ -1,0 +1,18 @@
+#offer {
+  margin-bottom: 84px;
+}
+
+.offer-options {
+  display: flex;
+
+  justify-content: center;
+}
+@media (max-width: 640px) {
+  #offer {
+    margin-bottom: 44px;
+    margin: 0 auto;
+  }
+  .offer-options {
+    flex-wrap: wrap;
+  }
+}

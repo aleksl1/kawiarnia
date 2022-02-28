@@ -1,0 +1,18 @@
+.photo-expanded-wrapper {
+  background-color: rgba(221, 221, 221, 0.842);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: 0 auto;
+  backdrop-filter: blur(5px);
+  z-index: 1000;
+}
+.photo-expanded img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+}

@@ -1,0 +1,60 @@
+.desktop-nav {
+  height: 84px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menu-list-left,
+.menu-list-right {
+  list-style: none;
+  flex-basis: 50%;
+  height: 40px;
+  display: flex;
+}
+.menu-list-left {
+  margin-left: 140px;
+}
+.menu-list-right {
+  margin-right: 142px;
+  justify-content: flex-end;
+}
+.menu-item {
+  margin: 0 30px;
+}
+.menu-item-link {
+  text-decoration: none;
+  color: white;
+  text-align: left;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  cursor: pointer;
+}
+.menu-about,
+.menu-offer,
+.menu-gallery {
+  font: normal normal normal 30px/41px Segoe UI;
+}
+
+.menu-contact {
+  font: normal normal normal 30px/40px Open Sans;
+}
+.mobile-icon {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .desktop-nav {
+    display: none;
+  }
+  .mobile-icon {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 85%;
+    color: white;
+    font-size: 40px;
+    z-index: 1002;
+  }
+}
