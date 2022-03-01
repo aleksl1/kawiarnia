@@ -1,4 +1,4 @@
-import "../styles/Mobile.css";
+import "../styles/MobileNav.css";
 
 const MobileNav = () => {
   return (

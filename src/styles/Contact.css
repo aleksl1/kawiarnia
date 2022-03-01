@@ -1,26 +1,31 @@
 #contact {
-  margin-bottom: 84px;
+  margin-bottom: 4rem;
 }
-
 .contact-wrapper {
-  display: flex;
-  width: 70%;
-  margin: 0 auto;
+  margin-top: 4rem;
+}
+.contact-map {
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 1px solid #707070;
+  opacity: 1;
+  width: 100vw;
+  height: 70vw;
 }
 .contact-info {
-  flex-basis: 30%;
+  margin: 2rem auto;
   display: flex;
   flex-wrap: wrap;
-  align-self: flex-start;
+  font-weight: bold;
 }
 .contact-info-adress-icon,
 .contact-info-phone-icon,
 .contact-info-email-icon {
-  flex-basis: 20%;
+  flex-basis: 25%;
   line-height: 33px;
-  margin-bottom: 10px;
+  margin-bottom: 1rem;
   font-size: 25px;
-  text-align: center;
+  text-align: right;
+  margin-right: 1rem;
 }
 .contact-info-adress-icon {
   line-height: 66px;
@@ -28,7 +33,7 @@
 .contact-info-adress,
 .contact-info-phone,
 .contact-info-email {
-  flex-basis: 75%;
+  flex-basis: 50%;
   line-height: 33px;
   margin-left: 5px;
   margin-bottom: 10px;
@@ -36,52 +41,54 @@
 .contact-info span {
   display: block;
   text-align: left;
-  font: normal normal bold 24px/33px Open Sans;
+  font-size: 24px;
+  font-family: "Open Sans", sans-serif;
   letter-spacing: 0px;
   color: #2d0800;
   opacity: 1;
 }
-.contact-map {
-  background: #ffffff 0% 0% no-repeat padding-box;
-  border: 1px solid #707070;
-  opacity: 1;
-  width: 674px;
-  height: 479px;
-}
-
-@media (max-width: 640px) {
-  #contact {
-    margin-bottom: 44px;
-  }
-
+@media (min-width: 820px) {
   .contact-wrapper {
     display: flex;
     flex-direction: row-reverse;
-    flex-wrap: wrap;
-    width: 100%;
+    align-items: center;
   }
   .contact-info {
-    flex-basis: auto;
-    margin: 0 auto 40px;
-    justify-content: space-evenly;
+    justify-content: flex-end;
   }
+  .contact-map {
+    width: 60vw;
+    height: 40vw;
+    margin: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact-wrapper {
+    align-items: flex-start;
+  }
+  .contact-map {
+    width: 674px;
+    height: 443px;
+    margin-right: 15%;
+  }
+
   .contact-info-adress-icon,
   .contact-info-phone-icon,
   .contact-info-email-icon {
     flex-basis: 25%;
-
-    padding: 0;
+    line-height: 33px;
+    font-size: 25px;
+    text-align: right;
+  }
+  .contact-info-adress-icon {
+    line-height: 66px;
   }
   .contact-info-adress,
   .contact-info-phone,
   .contact-info-email {
     flex-basis: 50%;
-  }
-  .contact-info span {
-    text-align: center;
-  }
-  .contact-map {
-    width: 100vw;
-    height: 258px;
+    line-height: 33px;
+    margin: 0;
   }
 }

@@ -1,60 +1,89 @@
 .desktop-nav {
-  height: 84px;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.menu-list-left,
-.menu-list-right {
-  list-style: none;
-  flex-basis: 50%;
-  height: 40px;
-  display: flex;
-}
-.menu-list-left {
-  margin-left: 140px;
-}
-.menu-list-right {
-  margin-right: 142px;
-  justify-content: flex-end;
-}
-.menu-item {
-  margin: 0 30px;
-}
-.menu-item-link {
-  text-decoration: none;
-  color: white;
-  text-align: left;
-  letter-spacing: 0px;
-  color: #ffffff;
-  opacity: 1;
-  cursor: pointer;
-}
-.menu-about,
-.menu-offer,
-.menu-gallery {
-  font: normal normal normal 30px/41px Segoe UI;
-}
-
-.menu-contact {
-  font: normal normal normal 30px/40px Open Sans;
-}
-.mobile-icon {
   display: none;
 }
-
-@media (max-width: 640px) {
-  .desktop-nav {
+.mobile-icon {
+  display: block;
+  position: absolute;
+  top: 1%;
+  left: 85vw;
+  color: white;
+  font-size: 40px;
+  z-index: 1002;
+}
+@media (min-width: 640px) {
+  .mobile-icon {
     display: none;
   }
-  .mobile-icon {
-    display: block;
-    position: absolute;
-    top: 10px;
-    left: 85%;
+  .desktop-nav {
+    height: 64px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .menu-list-left,
+  .menu-list-right {
+    list-style: none;
+    flex-basis: 50%;
+    height: 30px;
+    display: flex;
+  }
+  .menu-list-left {
+    margin-left: 3%;
+  }
+  .menu-list-right {
+    margin-right: 3%;
+    justify-content: flex-end;
+  }
+  .menu-item {
+    margin: 0 1rem;
+  }
+  .menu-item-link {
+    text-decoration: none;
     color: white;
+    text-align: left;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 1;
+    cursor: pointer;
+  }
+  .menu-about,
+  .menu-offer,
+  .menu-gallery {
+    font: normal normal normal 30px Segoe UI;
+  }
+
+  .menu-contact {
+    font: normal normal normal 30px Open Sans;
+  }
+  .mobile-icon {
+    display: none;
+  }
+}
+@media (min-width: 820px) {
+}
+@media (min-width: 1024px) {
+  .menu-list-left {
+    margin-left: 5%;
+  }
+  .menu-list-right {
+    margin-right: 5%;
+  }
+}
+@media (min-width: 1400px) {
+  .menu-list-left {
+    margin-left: 7%;
+  }
+  .menu-list-right {
+    margin-right: 7%;
+  }
+  .menu-item {
+    margin: 0 2rem;
+  }
+  .menu-about,
+  .menu-offer,
+  .menu-gallery,
+  .menu-contact {
     font-size: 40px;
-    z-index: 1002;
   }
 }
